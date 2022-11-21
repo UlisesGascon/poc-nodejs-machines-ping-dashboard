@@ -1,0 +1,27 @@
+{
+  "name": "poc-nodejs-machines-ping-dashboard",
+  "version": "1.0.0",
+  "description": "A simple way to visualize the Node.js Machines inventory and perform a cyclical ping to collect network metrics with a full dockerize environment and a fancy dashboard.",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "infra:start": "docker-compose up -d --build",
+    "infra:stop": "docker-compose down",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UlisesGascon/poc-nodejs-machines-ping-dashboard.git"
+  },
+  "author": "Ulises Gascon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UlisesGascon/poc-nodejs-machines-ping-dashboard/issues"
+  },
+  "homepage": "https://github.com/UlisesGascon/poc-nodejs-machines-ping-dashboard#readme",
+  "devDependencies": {
+    "standard": "17.0.0"
+  }
+}
